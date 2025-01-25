@@ -1,0 +1,45 @@
+.model-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #031a21;
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+.dialog-box {
+  border-radius: 10px;
+   margin: 10px;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.mx-20 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cls-btn {
+  background-color: var(--red) !important;
+  border-radius: 5px;
+}
+
+.reg-btn {
+  background-color: var(--blue) !important;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width : 768px) {
+  .model-head {
+    overflow-y:scroll;
+    margin: 1.5rem;
+  }
+  .dialog-box {
+    max-height: 560px;
+  }
+
+}
