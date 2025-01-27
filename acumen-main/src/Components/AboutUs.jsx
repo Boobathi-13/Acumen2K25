@@ -6,7 +6,7 @@ import bottom from "../assets/horizons_train.png";
 
 function AboutUs() {
     return (
-        <div className="text-white relative bg-gradient-to-b from-[rgb(18,11,14)] via-[rgb(52,45,89)] to-[rgb(61,54,109)]">
+        <div className="text-white relative bg-gradient-to-b from-[rgb(18,11,14)] via-[rgb(52,45,89)] to-[rgb(61,54,109)] overflow-hidden">
               <div className="absolute inset-0 bg-cover bg-center my-48" >
               <img src={stars} alt="Bottom Image" className="w-full object-contain scale-150" />
               </div>

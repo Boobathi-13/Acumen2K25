@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import stars from "../assets/stars.png";
 
-function Footer() {
+const Footer = ({ className }) => {
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -22,9 +22,9 @@ function Footer() {
 
     return (
         <div>
-            <div className='max-w-full mx-auto py-32 px-4 flex flex-row flex-wrap justify-around text-gray-300 relative bg-gradient-to-b from-[rgb(24,21,13)] via-[rgb(46,60,73)] to-[rgb(52,69,85)]'>
+            <div className={`max-w-full mx-auto py-32 px-4 flex flex-row flex-wrap justify-around text-gray-300 relative ${className}`}>
                 {/* Stars Image */}
-                <div className="absolute inset-0">
+                <div className="absolute inset-0 over">
                     <img src={stars} alt="Stars Background" className="w-full h-full object-cover scale-150" />
                 </div>
                 <div className='text-left max-sm:basis-full max-sm:py-4 z-10'>

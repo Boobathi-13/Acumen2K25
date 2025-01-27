@@ -6,7 +6,7 @@ import Landing from '../Components/Landing'
 // import Header from '../Components/header'
 import VantaBg from '../Components/VantaBg'
 import Events from '../Components/Events'
-
+import Scrol from '../Components/Scrol'
 function Home(){
     return (
         <div>
@@ -15,8 +15,8 @@ function Home(){
             <Landing/>
             <AboutUs/>
             <Events/>
-            <Footer/>
-           
+            <Scrol/>
+            <Footer className="bg-gradient-to-b from-[rgb(15,15,17)] via-[rgb(46,60,73)] to-[rgb(52,69,85)]"/>
         </div>
        
     );

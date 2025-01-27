@@ -17,7 +17,7 @@ function Dev(){
             {/* <Header/> */}
             <NavBar/>
             <Developers/>
-            <Footer/>
+            <Footer className="bg-gradient-to-b from-[rgb(15,15,17)] via-[rgb(46,60,73)] to-[rgb(52,69,85)]"/>
         </div>
     );
 }

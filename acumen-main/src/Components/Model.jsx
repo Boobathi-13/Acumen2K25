@@ -5,9 +5,9 @@ import { Fade } from "react-awesome-reveal";
 const Modal = ({ setIsOpen, handleClick, Content }) => {
   console.log(Content);
   return (
-    <Fade top>
+    // <Fade top>
       <div
-        className="model-head flex items-center justify-center "
+        className="model-head flex items-center justify-center"
         style={{ display: setIsOpen ? "flex" : "none" }}
       >
         <div className="flex flex-col dialog-box p-[10px]">
@@ -41,7 +41,7 @@ const Modal = ({ setIsOpen, handleClick, Content }) => {
           <div className="flex justify-center mt-8">
             <a
               href={Content.link}
-              className="flex-1 p-[10px] mx-20 reg-btn font-bold text-black"
+              className="flex-1 p-[10px] mx-20 reg-btn font-bold text-black text-center"
             >
               Register
             </a>
@@ -54,7 +54,7 @@ const Modal = ({ setIsOpen, handleClick, Content }) => {
           </div>
         </div>
       </div>
-    </Fade>
+    // </Fade>
   );
 };
 

@@ -99,7 +99,7 @@ function Events() {
   };
   return (
     <>
-    <div className="text-white relative bg-gradient-to-b from-[rgb(18,12,15)] via-[rgb(42,39,40)] to-[rgb(46,45,45)]">
+    <div className="text-white relative bg-gradient-to-b from-[rgb(18,12,15)] via-[rgb(42,39,40)] to-[rgb(46,45,45)] overflow-hidden">
     <div className="flex flex-col justify-center items-center w-full py-40" id="events">
     <div className="absolute justify-center bg-cover bg-center absolute-bottom" >
       <img src={stars} alt="Bottom Image" className="w-full object-contain scale-125" />
@@ -140,7 +140,7 @@ function Events() {
 
   
     {/* Non-Technical Events */}
-    <div className="text-white relative bg-gradient-to-b from-[rgb(24,21,13)] via-[rgb(63,54,39)] to-[rgb(73,63,47)]">
+    <div className="text-white relative bg-gradient-to-b from-[rgb(24,21,13)] via-[rgb(63,54,39)] to-[rgb(73,63,47)] overflow-hidden">
     <div className="flex flex-col justify-center items-center w-full py-40">
       <div className="absolute justify-center bg-cover bg-center absolute-bottom" >
       <img src={stars} alt="Bottom Image" className="w-full object-contain scale-125" />
@@ -176,7 +176,7 @@ function Events() {
     </div>
   
     {/* Workshops */}
-    <div className="text-white relative bg-gradient-to-b from-[rgb(14,8,18)] via-[rgb(46,34,58)] to-[rgb(55,41,68)]">
+    <div className="text-white relative bg-gradient-to-b from-[rgb(14,8,18)] via-[rgb(46,34,58)] to-[rgb(55,41,68)] overflow-hidden">
     <div className="flex flex-col justify-center items-center w-full py-40">
       <div className="absolute justify-center bg-cover bg-center absolute-bottom" >
       <img src={stars} alt="Bottom Image" className="w-full object-contain scale-125" />
@@ -205,6 +205,15 @@ function Events() {
           ))}
         </div>
       </Fade>
+      <div>
+        {isOpen && (
+          <Modal
+            setIsOpen={setIsOpen}
+            handleClick={handleClick}
+            Content={contest[Contest]}
+          />
+        )}
+      </div>
             <div className="absolute bottom-5 left-0 w-full absolute-bottom">
                 <img src={tech} alt="Bottom Image" className="scale-150"/>
             </div>

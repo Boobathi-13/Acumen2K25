@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+
 :root {
   --red: #ff6a00e5;
   --blue: #dcc110;
@@ -59,4 +60,3 @@ body>* {
     padding: 4rem 0rem !important; 
   }
 }
-

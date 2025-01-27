@@ -5,18 +5,11 @@ import Footer from '../Components/Footer'
 // import Header from '../Components/header'
 function event() {
   return (
-    <div
-        className="relative"
-        style={{
-            background: "linear-gradient(to bottom, #2c003e, #000000)", // Dark violet to black
-            minHeight: "100vh", // Ensures it covers the viewport
-            color: "white", // Ensures text is visible on dark background
-        }}
-    >
+    <div>
     {/* <Header/> */}
     <NavBar/>
-    <Events />
-    <Footer/>
+    <Events/>
+    <Footer className="text-white relative bg-gradient-to-b from-[rgb(24,21,13)] via-[rgb(46,60,73)] to-[rgb(52,69,85)]"/>
     </div>
   )
 }

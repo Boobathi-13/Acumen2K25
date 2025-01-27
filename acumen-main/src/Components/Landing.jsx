@@ -43,7 +43,7 @@ function Landing() {
               speed={5}
               repeat={Infinity}
             />
-            <div className="register_but object-contain  inset-0 z-20">
+            <div className="register_but object-contain  inset-0">
               <Link to="/events">
                 <button className="bg-[#f56511] text-white text-lg w-[200px] rounded-md font-medium my-6 mx-auto py-3">
                   Register soon
@@ -55,7 +55,7 @@ function Landing() {
             </p>
           </div>
         </div>
-        <div className="bottom-0 inset-0 z-10 left-0 w-full overflow-hidden">
+        <div className="bottom-0 inset-0 left-0 w-full overflow-hidden">
           <img src={bottom} alt="Bottom Image" className="scale-150" />
         </div>
       </div>
