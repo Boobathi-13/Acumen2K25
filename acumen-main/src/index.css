@@ -14,12 +14,20 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Sofia Pro", Helvetica, sans-serif;
 }
 
 body>* {
   /* font-family: 'Bree Serif', serif; */
-  font-family: 'Harry Beast Regular';
-  src: url('../public/fonts/HarryBeastRegular.ttf') format('truetype');
+  font-family: 'Sofia Pro';
+  src: url('../public/fonts/SofiaPro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../public/fonts/SofiaPro.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }

@@ -107,7 +107,7 @@ function Events() {
       {/* Technical Events */}
       <Fade left cascade>
         <div className="mb-8">
-          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)]">
+          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)] font-harry">
             Technical Events
           </h1>
         </div>
@@ -147,7 +147,7 @@ function Events() {
       </div>
       <Fade left cascade>
         <div className="mb-8">
-          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)]">
+          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)] font-harry">
             Non-Technical Events
           </h1>
         </div>
@@ -183,7 +183,7 @@ function Events() {
       </div>
       <Fade left cascade>
         <div className="mb-8">
-          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)]">
+          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)] font-harry">
             Workshops
           </h1>
         </div>

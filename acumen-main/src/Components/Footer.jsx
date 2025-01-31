@@ -30,21 +30,21 @@ const Footer = ({ className }) => {
                 <div className='text-left max-sm:basis-full max-sm:py-4 z-10'>
                     <h1 className='text-4xl font-bold text-[var(--red)]'>Contact Us</h1>
                     <p className='py-4 font-bold text-xl text-white'>Staff Coordinator</p>
-                    <p className='font-mono'>Mr. A. Chandrasekaran - 7373255432</p>
                     <p className='font-mono'>Dr. A. Arulmurugan - 9659341901</p>
+                    <p className='font-mono'>Mr. K. Kavin Kumar - 8778544869</p>
                 </div>
                 <div className='text-left max-sm:basis-full max-sm:py-4 z-10'>
                     <h1 className='text-4xl font-bold text-[var(--red)]'>Venue</h1>
-                    <h1 className='text-3xl font-bold text-white py-4'>Convention Center</h1>
+                    <h1 className='text-3xl font-bold text-white py-4'>Maharaja Auditorium</h1>
                     <p className='font-bold text-xl text-white'>Student Coordinator</p>
-                    <p className='font-mono'>7708921542 - Harini R</p>
-                    <p className='font-mono'>9488042479 - Naveen Bharathi P</p>
+                    <p className='font-mono'>6381271796 - Cibi Krishna V</p>
+                    <p className='font-mono'>9994755088 - Kavyashree V N</p>
                     <p className='font-bold text-1xl text-white'>Transport Co ordinator</p>
                     <p className='font-mono'>9342910364 - Jinisha</p>
-                    <p className='font-mono'>8508087156 - SakthiMurugan </p>
+                    <p className='font-mono'>8526768789 - Boobathi Raja K M</p>
                     <ul className="py-4">
-                        <a href='mailto:ece.isf.2023@gmail.com' rel="noopener noreferrer " target={"_blank"} >
-                            <li className='text-lg'> <FaGoogle size={30} className="inline-block" /><span className="px-2 text-lg">ece.isf.2023@gmail.com</span></li>
+                        <a href='mailto:ecea.isf.2025@gmail.com' rel="noopener noreferrer " target={"_blank"} >
+                            <li className='text-lg'> <FaGoogle size={30} className="inline-block" /><span className="px-2 text-lg">ecea.isf.2025@gmail.com</span></li>
                         </a>
                     </ul>
                 </div>

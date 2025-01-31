@@ -18,6 +18,7 @@ module.exports = {
         200: '200',
       },
       fontFamily: {
+        sofia: ['"Sofia Pro"', 'sans-serif'],
         harry: ['"Harry Beast Regular"', 'serif'],
         runes: ['"Legendary Runes"', 'sans-serif'],
       },

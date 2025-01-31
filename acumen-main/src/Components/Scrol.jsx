@@ -192,6 +192,11 @@ const Scrol = () => {
   return (
     <>
       <div className="text-white relative bg-gradient-to-b from-[rgb(24,21,13)] via-[rgb(46,34,58)] to-[rgb(55,41,68)] pt-40 px-44">
+        <div className="mb-8">
+          <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-[var(--red)] font-harry flex justify-center">
+            About Us
+          </h1>
+        </div>
       <div className="absolute inset-0 bg-cover bg-center my-12 z-0" >
         <img src={stars} alt="Bottom Image" className="w-full object-contain scale-150 z-0" />
       </div>
