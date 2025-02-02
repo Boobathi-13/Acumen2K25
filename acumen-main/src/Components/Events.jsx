@@ -119,7 +119,7 @@ function Events() {
           {["Paper Presentation", "Project Presentation", "Codathon", "Track Your Way"].map(
             (event, index) => (
               <div key={index} className="shield flex-1 min-w-[200px] max-w-[250px] text-center">
-                <h1 className="p-2 text-[var(--blue)]">{event}</h1>
+                <h1 className="p-2 text-[var(--blue)] font-harry">{event}</h1>
                 <button
                   className="bg-[#2e2a2a] text-white text-lg w-[200px] rounded-md font-medium mx-auto py-2 my-4 shield-button"
                   id={index}
@@ -157,7 +157,7 @@ function Events() {
         <div className="flex flex-wrap justify-center gap-8 w-full max-w-[1200px]">
           {["Picture Yourself", "Rhythm Gala", "Fun Troll", "Sherlock Holmes"].map((event, index) => (
             <div key={index} className="shield flex-1 min-w-[200px] max-w-[250px] text-center">
-              <h1 className="p-2 text-[var(--blue)]">{event}</h1>
+              <h1 className="p-2 text-[var(--blue)] font-harry">{event}</h1>
               <button
                 className="bg-[#2e2a2a] text-white text-lg w-[200px] rounded-md font-medium mx-auto py-2 my-4 shield-button"
                 id={index + 4}
@@ -193,7 +193,7 @@ function Events() {
         <div className="flex flex-wrap justify-center gap-8 w-full max-w-[1200px]">
           {["Battery For EV", "Drone Tech", "Smart 5G Antenna"].map((workshop, index) => (
             <div key={index} className="shield flex-1 min-w-[200px] max-w-[250px] text-center">
-              <h1 className="p-2 text-[var(--blue)]">{workshop}</h1>
+              <h1 className="p-2 text-[var(--blue)] font-harry">{workshop}</h1>
               <button
                 className="bg-[#2e2a2a] text-white text-lg w-[200px] rounded-md font-medium mx-auto py-2 my-4 shield-button"
                 id={index + 8}

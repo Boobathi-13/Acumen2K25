@@ -143,10 +143,14 @@ import stars from "../assets/stars.png"
 
 const Scrol = () => {
   const images = [image0, image1, image2, image3, image4, image5];
+  const names = ["John Doe", "Jane Smith", "Alice Brown", "Bob Johnson", "Emma White", "David Miller"];
+  const names1 = ["John Doe Smith", "Jane Smith Doe", "Alice Brown Smith", "Bob Johnson Smith", "Emma White Smith", "David Miller Smith"];
   const carouselRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 
   const infiniteImages = [...images, ...images, ...images];
+  const infiniteNames = [...names, ...names, ...names];
+  const infiniteNames1 = [...names1, ...names1, ...names1];
 
   const handleNextSlide = () => {
     if (carouselRef.current) {
@@ -203,7 +207,7 @@ const Scrol = () => {
         <div>
           <button
             onClick={handlePrevSlide}
-            className="absolute left-20 top-80 p-2 bg-transparent"
+            className="absolute left-20 top-96 p-2 bg-transparent"
           >
             <img
               src={leftArrow}
@@ -215,33 +219,41 @@ const Scrol = () => {
         <div className="relative w-full h-96 flex items-center justify-center overflow-hidden">
           {/* Carousel */}
           <div
-            ref={carouselRef}
-            className="flex items-center gap-x-10"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-            style={{
-              width: `${infiniteImages.length * 33.33}%`,
-              transform: "translateX(0)",
-            }}
-          >
-            {infiniteImages.map((src, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-1/6 h-full flex items-center justify-center"
-              >
-                <img
-                  src={src}
-                  alt={`Image ${index}`}
-                  className="rounded-xl h-72 w-full object-cover"
-                />
+          ref={carouselRef}
+          className="flex items-center gap-x-10"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          style={{
+            width: `${infiniteImages.length * 33.33}%`,
+            transform: "translateX(0)",
+          }}
+        >
+          {infiniteImages.map((src, index) => (
+            <div
+              key={index}
+              className="relative flex-shrink-0 w-1/6 h-full flex items-center justify-center"
+            >
+              <img
+                src={src}
+                alt={`Image ${index}`}
+                className="rounded-xl h-72 w-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/70 to-transparent rounded-b-xl"></div>
+              {/* Name Box */}
+              <div className="absolute bottom-10 text-white text-lg font-bold px-4 py-2 rounded-lg shadow-lg justify-center font-sofia">
+                {infiniteNames[index]}
               </div>
-            ))}
-          </div>
+              <div className="absolute bottom-2 text-white text-lg font-bold px-4 py-2 rounded-lg shadow-lg justify-center font-sofia">
+                {infiniteNames1[index]}
+              </div>
+            </div>
+          ))}
+        </div>
         </div>
         <div>
           <button
             onClick={handleNextSlide}
-            className="absolute right-28 top-80 p-2 bg-transparent"
+            className="absolute right-28 top-96 p-2 bg-transparent"
           >
             <img
               src={rightArrow}

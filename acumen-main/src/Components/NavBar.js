@@ -27,7 +27,7 @@ const NavBar = () => {
                     <h1 className="w-full text-3xl font-bold text-[var(--red)] m-4 font-runes"> Acumen 2K25 </h1>
                     <ul className="uppercase p-4">
                         <li className="p-4 border-b border-gray-600"><Link to="/">Home</Link></li>
-                        <li className="p-4 border-b border-gray-600"><Link to="/events">Event</Link></li>
+                        <li className="p-4 border-b border-gray-600"><Link to="/event">Event</Link></li>
                         {/* <li className="p-4 border-b border-gray-600"><Link to="/about">About</Link></li> */}
                     </ul>
                 </div>
